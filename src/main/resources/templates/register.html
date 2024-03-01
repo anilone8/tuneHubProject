@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>User Registration</title>
+</head>
+<style>
+/* style.css */
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+h1 {
+    text-align: center;
+    color: #007bff;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: #495057;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+}
+
+input[type="radio"] {
+    margin-right: 5px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+</style>
+<body>
+<h1>User Registration:</h1>
+<form action="register" method="post">
+    <label>UserName: 
+    <input name="username" type="text"/></label>
+    <br>
+    <label>Email:
+     <input name="email" type="text"/></label>
+     <br>
+     
+    <label>Password:
+     <input name="password" type="password"/></label>
+     <br>
+     
+    <label>Gender:
+    Male<input type="radio" name="gender" value="male"/>
+    Female<input type="radio" name="gender" value="female"/>
+    Other<input type="radio" name="gender" value="other"/>
+    </label>
+    <br>
+    
+    <label>Role:
+    Admin<input type="radio" name="role" value="admin"/>
+    Customer<input type="radio" name="role" value="customer"/>
+    </label>
+    <br>
+    
+    <label>Address:</label>
+    <textarea name="address"></textarea>
+    <br>
+    <input type="submit"/>
+
+</form>
+</body>
+</html>
